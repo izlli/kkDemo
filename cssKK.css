@@ -1,16 +1,3 @@
-/*.harmaaNelio{
-	position: fixed;
-	padding: 0;
-	margin: 0;
-	margin-top: 108px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #5E5E5E;
-	opacity: 0;
-	z-index: 1;
-}*/
 
 .kirjauduUlos{
 	position: absolute;
@@ -80,9 +67,8 @@
 	display: flex;
 }
 
-/*.dropdownNavi .naviOtsikko:hover > .naviNelio1 {opacity: 1;}*/
-/*.dropdownNavi .naviOtsikko:hover > .naviItemit {opacity: 1;}*/
-
+/*Hover liiankin innokas - pitäisi tulla esille vain, kun ollaan navin otsikoiden päällä*/
+/*Harmaa-neliö ei toimi - syy epäselvä*/
 .dropdownNavi:hover .harmaaNelio {opacity: 0.2;}
 .dropdownNavi:hover .naviNelio1 {opacity: 1; z-index: 5}
 .dropdownNavi:hover .naviItemit {opacity: 1; z-index: 6}
@@ -90,6 +76,22 @@
 .naviItemit:hover p {background-color: #F6FBFF;}
 .naviItemit p:hover {background-color: #E0F3FF;}
 .naviItemit:hover + .harmaaNelio {opacity: 1;}
+
+/*.harmaaNelio{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	margin-top: 108px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #5E5E5E;
+	opacity: 0;
+	z-index: 1;
+
+	style="margin-top: 11px;"
+}*/
 
 .navigation{
 	width: 100%;
@@ -143,11 +145,12 @@ body{
   font-family:"Open Sans", sans-serif;
 }
 
-.tiedoteh1{
+.tiedoteHeader{
   color: #159ecb;
   font-weight: 700;
   font-size: 15px;
 }
+
 .aikajanaTekstit{
   padding: 10px;
 	text-align: left;
@@ -156,10 +159,12 @@ body{
   font-weight: 400;
   font-size: 13px;"
 }
+
 .aikajanaTekstit p{
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
+
 .tri-left.border.left-in:before {
 	content: ' ';
 	position: absolute;
@@ -218,7 +223,7 @@ body{
 
 .jana{
   width: 2px;
-  height: 345em;
+  height: 300em;
   background-color: #00526c;
 
   position: absolute;
@@ -236,10 +241,6 @@ body{
   margin-top: -100px;
   padding-bottom: 13px;
 }
-
-/*.pvmC:nth-child(2){
-	margin-top: 40px;
-}*/
 
 .aikajanaKuplaOikea {
   margin: 10px;
@@ -276,21 +277,6 @@ body{
   text-align: center;
   margin: 6px;
   border-radius: 2px;
-}
-
-.kesakuu{
-  top: 950px;
-}
-
-.heinakuu{
-  top: 320px;
-}
-
-.elokuu{
-  top: 310px;
-}
-.syyskuu{
-  top: 300px;
 }
 
 img{
