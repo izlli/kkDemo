@@ -1,0 +1,384 @@
+/*.harmaaNelio{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	margin-top: 108px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #5E5E5E;
+	opacity: 0;
+	z-index: 1;
+}*/
+
+.kirjauduUlos{
+	position: absolute;
+	color: white;
+	text-decoration: underline;
+	font-size: 12px;
+	margin-left: 1200px;
+}
+
+.kayttaja{
+	position: absolute;
+	color: white;
+	font-size: 12px;
+	margin-left: 1100px;
+}
+
+.naviItemit p:first-child{
+	margin-top: 30px;
+}
+
+.naviItemit p{
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+.naviItemit {
+	flex-direction: column;
+	opacity: 0;
+	width: 157px;
+	font-size: 12px;
+	display: flex;
+	margin-right: 15px;
+}
+
+.navikokonaisuus{
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}
+
+.naviOtsikko{
+	width: 30px;
+	color: white;
+	font-size: 14px;
+	margin-top: 60px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	display: flex;
+	font-weight: 600;
+	height: 40px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+.dropdownNavi{
+	display: flex;
+	padding-left: 60px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	z-index: 2;
+	display: flex;
+}
+
+/*.dropdownNavi .naviOtsikko:hover > .naviNelio1 {opacity: 1;}*/
+/*.dropdownNavi .naviOtsikko:hover > .naviItemit {opacity: 1;}*/
+
+.dropdownNavi:hover .harmaaNelio {opacity: 0.2;}
+.dropdownNavi:hover .naviNelio1 {opacity: 1; z-index: 5}
+.dropdownNavi:hover .naviItemit {opacity: 1; z-index: 6}
+
+.naviItemit:hover p {background-color: #F6FBFF;}
+.naviItemit p:hover {background-color: #E0F3FF;}
+.naviItemit:hover + .harmaaNelio {opacity: 1;}
+
+.navigation{
+	width: 100%;
+	height: 100px;
+	background-color: #159ecb;
+	display: flex;
+	/*align-items: flex-end;*/
+	/*flex-direction: column;*/
+}
+
+.naviNelio1{
+	background-color: white;
+	height:220px;
+	width: 1015px;
+	display: flex;
+	margin-top: 100px;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.opintopolkulogo{
+	width: 130px;
+	height: 30px;
+	padding-left: 60px;
+	padding-top: 20px;
+	float:left;
+	align-self: flex-start;
+}
+
+
+.tiedotepvm{
+	font-size: 12px;
+	color: #8E8E8E;
+}
+
+.aikajanaKatkaisin{
+	width: 100%;
+	height: 1px;
+  background: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+h3{
+  font-weight: 600;
+}
+body{
+  background-color:#F6F4F0;
+  font-family:"Open Sans", sans-serif;
+}
+
+.tiedoteh1{
+  color: #159ecb;
+  font-weight: 700;
+  font-size: 15px;
+}
+.aikajanaTekstit{
+  padding: 10px;
+	text-align: left;
+  line-height: 1.5em;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;"
+}
+.aikajanaTekstit p{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+.tri-left.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+
+.tri-left.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -10px;
+  top: 15px;
+	bottom: auto;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 10px solid #0A789C;
+}
+
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+  margin-left: 20px;
+}
+
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -10px;
+	right: auto;
+  top: 15px;
+	bottom: auto;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+
+  border-right: 10px solid #0A789C;
+}
+
+.jana{
+  width: 2px;
+  height: 345em;
+  background-color: #00526c;
+
+  position: absolute;
+}
+
+.aikajanaKuplaVasen {
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: 220px;
+	height: auto;
+	background-color: #0A789C;
+  border-radius: 2px;
+  align-self: flex-start;
+  margin-top: -100px;
+  padding-bottom: 13px;
+}
+
+/*.pvmC:nth-child(2){
+	margin-top: 40px;
+}*/
+
+.aikajanaKuplaOikea {
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: 220px;
+	height: auto;
+	background-color: #0A789C;
+  border-radius: 2px;
+  align-self: flex-end;
+  padding-bottom: 13px;
+}
+
+.pvmC{
+  width:40%;
+  align-items: center;
+  display:flex;
+  overflow: scroll;
+  height: 520px;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+}
+
+.kuukaudet{
+  z-index: 1;
+  width: 120px;
+  position: relative;
+  color: white;
+  background-color: #09536B;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  margin: 6px;
+  border-radius: 2px;
+}
+
+.kesakuu{
+  top: 950px;
+}
+
+.heinakuu{
+  top: 320px;
+}
+
+.elokuu{
+  top: 310px;
+}
+.syyskuu{
+  top: 300px;
+}
+
+img{
+  z-index: 2;
+  height: 100px;
+}
+
+.tiedoteAikajanaContainer{
+  display: flex;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  position:relative;
+}
+
+#tiedotteet{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 520px;
+}
+
+.tiedote {
+  flex-shrink: 0;
+  height: 110px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  border-radius: 2px;
+  border-color: #AEAEAE;
+  background-color: #FFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.schoolRectangle {
+	width: 180px;
+	height: 30px;
+  border: solid;
+  border-color: #159ecb;
+  background-color: white;
+  margin: 20px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #159ecb;
+  border-radius: 2px;
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.searchRectangle{
+  width: 800px;
+  height: 30px;
+  line-height: 30px;
+  border: solid;
+  border-color: #AEAEAE;
+  background-color: #FBFBFB;
+  color: #666666;
+  padding-left: 20px;
+  margin-left: 30px;
+  border-width: 1px;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quicksearch{
+  border: solid;
+  height: 26px;
+  line-height: 26px;
+  margin:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FBFBFB;
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+.line {
+	width: 97vw;
+	height: 1px;
+  background: #aeaeae;
+  margin-top: -13px;
+}
+
+.edTypes{
+  display: flex;
+}
